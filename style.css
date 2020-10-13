@@ -89,6 +89,38 @@ p {
 }
 
 
+/* Layout2 */
+.wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 2fr);
+    gap: 10px;
+
+}
+
+.thumbnail {
+    border: 2px dotted green;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.mainContent {
+    border: 2px dotted red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.sidebar {
+    border: 2px dotted purple;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
